@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ecommerce.testng.external.elements.radioCheck">
+      <class name="com.ecommerce.external.browser.screenshot.BrowserScreenshotTest">
         <methods>
+          <include name="closeDriver"/>
+          <include name="screenShotTest"/>
           <include name="setupDriver"/>
-          <include name="afterMethod"/>
-          <include name="radioButtons"/>
         </methods>
-      </class> <!-- com.ecommerce.testng.external.elements.radioCheck -->
+      </class> <!-- com.ecommerce.external.browser.screenshot.BrowserScreenshotTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
